@@ -1,0 +1,13 @@
+name: the-power-workflow-simple
+on:
+   push:
+jobs:
+  blank:
+    runs-on: ubuntu-latest
+    steps:
+      - name: MyCommands
+        run: |
+          echo Hello
+          mkdir -p dist/hello
+          echo "### Hello World" > dist/hello/hello-world.md
+      # https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts
