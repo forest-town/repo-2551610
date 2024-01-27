@@ -8,6 +8,7 @@ jobs:
       - name: MyCommands
         run: |
           echo Hello
+          sleep 30
           mkdir -p dist/hello
           echo "### Hello World" > dist/hello/hello-world.md
       # https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts
